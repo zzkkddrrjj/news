@@ -66,9 +66,9 @@ platforms:
     # === 财经投资类 ===
     - id: "wallstreetcn-hot"
       name: "华尔街见闻 最热"
-      id: "cls-telegraph"
+    - id: "cls-telegraph"
       name: "财联社 电报"
-      id: "fastbull-news"
+    - id: "fastbull-news"
       name: "法布财经 头条"
     
     # === 社交/短视频/娱乐类 ===
@@ -77,7 +77,7 @@ platforms:
     - id: "bilibili-hot-search"
       name: "bilibili 热搜"
     - id: "hupu"
-    name: "虎扑"
+      name: "虎扑"
 
     # === 科技类平台 ===
     - id: "ithome"
@@ -326,7 +326,7 @@ notification:
   # 推送渠道配置
   channels:
     feishu:
-      webhook_url: ""                 # 飞书机器人 webhook URL
+      webhook_url: "https://www.feishu.cn/flow/api/trigger-webhook/a447155ba2a8d7c8e3e1508a02a28fc7"                 # 飞书机器人 webhook URL
 
     dingtalk:
       webhook_url: ""                 # 钉钉机器人 webhook URL
@@ -425,11 +425,11 @@ ai:
   # 完整列表: https://docs.litellm.ai/docs/providers
   # 如果你对于看英文文档比较头疼，那么可以点击页面右下角的 【Ask AI】 ,用中文询问怎么配置 
   
-  model: "deepseek/deepseek-chat"
+  model: "xiaomi/mimo-v2.5"
 
-  api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: "tp-c44k9rg7s5wfmucl9dsoj05g9e9i431df717mayz74tat55o"                       # API Key（建议使用环境变量 AI_API_KEY）
   
-  api_base: ""                      # 自定义 API 端点（可选，大多数情况留空）
+  api_base: "https://token-plan-cn.xiaomimimo.com/v1"                      # 自定义 API 端点（可选，大多数情况留空）
                                     # 示例: https://api.openai.com/v1（自建代理或兼容接口）
                                     #
                                     # 💡 超级重要：连接任意兼容 OpenAI 协议的模型商
